@@ -1,0 +1,55 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task 01 - Prodigy InfoTech</title>
+  <link rel="stylesheet" href="task01.css">
+</head>
+
+<body>
+  <nav id="navbar">
+    <div class="menu-bar">
+      <h1>Hello, Welcome to the Task-01 Page</h1>
+      <div class="options">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Projects</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const navbar = document.getElementById("navbar");
+
+      // Change background color on scroll
+      window.addEventListener("scroll", function () {
+        if (window.scrollY > 50) {
+          navbar.style.backgroundColor = "rgb(51, 56, 56)";
+        } else {
+          navbar.style.backgroundColor = "rgb(28, 34, 34)";
+        }
+      });
+
+      // Change color on hover
+      const menuItems = document.querySelectorAll(".options a");
+
+      menuItems.forEach(function (menuItem) {
+        menuItem.addEventListener("mouseenter", function () {
+          this.style.backgroundColor = "gold";
+          this.style.color = "rgb(51, 56, 56)";
+        });
+
+        menuItem.addEventListener("mouseleave", function () {
+          this.style.backgroundColor = "";
+          this.style.color = "white";
+        });
+      });
+    });
+
+  </script>
+</body>
+
+</html>

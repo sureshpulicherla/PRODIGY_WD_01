@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.menu-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-color: rgb(28, 34, 34);
+  color: white;
+  height: 10em;
+}
+
+.options a {
+  color: white;
+  padding: 10px;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.options a:hover {
+  background-color: rgb(51, 56, 56);
+  border-radius: 10px;
+  color: gold;
+  text-decoration: none;
+}
